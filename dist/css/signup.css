@@ -1,0 +1,58 @@
+body {
+    background: url('https://i.postimg.cc/jjFh2Cf6/login-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.signup-form {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form h2 {
+    color: #fff;
+}
+
+.signup-form .form-label {
+    color: blue;
+}
+
+.signup-form .form-control {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 5px;
+    color: #000;
+}
+
+.signup-form .btn-water {
+    background-color: rgba(0, 119, 182, 0.7);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form .btn-water:hover {
+    background-color: rgba(0, 119, 182, 1);
+}
+
+.text-light {
+    color: black !important;
+}
+
+.login-link {
+    color: rgba(0, 119, 182, 0.9);
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: rgba(0, 119, 182, 1);
+    text-decoration: underline;
+}

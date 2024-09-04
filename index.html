@@ -1,0 +1,254 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Header Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <script src="https://kit.fontawesome.com/8c23de5811.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <a class="navbar-brand" href="#">PowerHouse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#image-slider">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-signup btn-outline-dark" type="button " href="pages/signup_signin/signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="btn btn-signin btn-outline-dark" type="button" href="pages/signup_signin/login.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center my-5">
+        <!-- Banner Section -->
+        <div class="banner">
+            <h1>Welcome to Powerhouse Electronics</h1>
+            <p>Your One-Stop Shop for All Things Tech</p>
+        </div>
+
+        <!-- Store Layout Section -->
+        <div id="about" class="container store-content">
+            <h2 class="section-title">Explore the Latest in Technology</h2>
+            <p class="text-center">At Powerhouse Electronics, we offer a wide range of electronic devices and accessories to meet all your tech needs. Whether you're looking for the latest smartphones, laptops, or home gadgets, we have something for everyone.</p>
+            <div class="row">
+                <div class="col-md-6 store-image">
+                    <img src="dist/img/powerhouse-1.jfif" alt="Store Layout 1" class="img-fluid rounded" width="100%" height="100%">
+                </div>
+                <div class="col-md-6 store-image">
+                    <img src="dist/img/powerhouse-2.webp" alt="Store Layout 2" class="img-fluid rounded" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+
+        <!-- Quality Products Section -->
+        <div class="container store-content">
+            <h2 class="section-title">Sleek and Modern Store Design</h2>
+            <p class="text-center">Our stores are designed with a modern aesthetic to provide a seamless shopping experience. Brightly lit displays and easy-to-navigate layouts ensure that you can find what you’re looking for with ease.</p>
+            <div class="row">
+                <div class="col-md-12 store-image">
+                    <img src="dist/img/powerhouse-3.jfif" alt="Store Layout 3" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessories Section -->
+        <div class="container accessories">
+            <h2 class="section-title">Accessories for Every Need</h2>
+            <p class="text-center">Don’t forget to check out our wide range of accessories. Whether you need a new mouse, phone case, or wireless earbuds, we have the perfect items to complement your devices.</p>
+            <img src="dist/img/powerhouse-4.jpg" alt="Accessories">
+        </div>
+
+         <!-- Image Slider Section -->
+        <section id="image-slider" class="slider-section">
+            <div class="container">
+                <h2 class="text-center mb-4 mt-5">PowerHouse Slides</h2>
+                <div class="slider">
+                    <div class="slide active"><img src="dist/img/powerhouse-5.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="dist/img/powerhouse-3.jfif" alt="Slide 2"></div>
+                    <div class="slide"><img src="dist/img/powerhouse-6.jfif" alt="Slide 3"></div>
+                    <div class="controls">
+                        <button class="control-btn" id="prev">&#10094;</button>
+                        <button class="control-btn" id="next">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Contact Section -->
+        <section id="contact" class="py-5 accessories">
+            <div class="container">
+                <h2 class="text-center mb-4">Get in Touch</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Us Section -->
+                <div class="col-md-4">
+                    <h5>About PowerHouse</h5>
+                    <p>PowerHouse Electronics is your one-stop shop for all things tech. From the latest gadgets to essential accessories, we have everything you need to stay connected and ahead of the curve.</p>
+                </div>
+                
+                <!-- Social Links Section -->
+                <div class="col-md-4">
+                    <h5>Social Links</h5>
+                    <ul class="list-unstyled d-flex justify-content-start">
+                        <li class="me-3">
+                            <a href="#" class="text-light">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-light">
+                                <i class="fa-brands fa-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Us Section -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Tech Street, Silicon Valley, CA</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@powerhouse.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="bg-light">
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2024 PowerHouse Electronics. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top-btn">&#8679;</button>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.slide');
+        const nextBtn = document.getElementById('next');
+        const prevBtn = document.getElementById('prev');
+        
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        // Show or hide the button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling down 300px
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top on button click
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+
+    </script>
+</body>
+</html>
