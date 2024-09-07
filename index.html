@@ -227,28 +227,6 @@
         setInterval(nextSlide, 5000);
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-
-        // Show or hide the button based on scroll position
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) { // Show button after scrolling down 300px
-                scrollToTopBtn.style.display = 'block';
-            } else {
-                scrollToTopBtn.style.display = 'none';
-            }
-        });
-
-        // Smooth scroll to top on button click
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    });
-
-
-    </script>
+   </script>
 </body>
 </html>
